@@ -11,9 +11,9 @@ and end it with '\u0000' (NULL)
 - int length() --> Get length of string
 - void erase(int index, int length) --> Erase characters of the string , as it's immutuble it store the result in new location <br>
 @parameters <br>
-&nbsp;&nbsp;- int index : the start of eraseing "\n"
-&nbsp;&nbsp;- int length : the length of erasing "\n"
+&nbsp;&nbsp;- int index : the start of eraseing <br>
+&nbsp;&nbsp;- int length : the length of erasing <br>
 - void insert(int index , String str) --> Insert characters of the string , as it's immutuble it store the result in new location <br>
 @parameters <br>
-&nbsp;&nbsp;- int index : the start of inserting "\n"
-&nbsp;&nbsp;- String str : the string to insert "\n"
+&nbsp;&nbsp;- int index : the start of inserting <br>
+&nbsp;&nbsp;- String str : the string to insert  <br>
