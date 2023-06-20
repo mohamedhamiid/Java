@@ -9,7 +9,7 @@ and end it with '\u0000' (NULL)
 - void print() --> Print the string
 - int indexOf (char x) --> Get index of a character in the string , if it's not exist it returns -1
 - int length() --> Get length of string
-- void erase(int index, int length) --> Erase characters of the string , as it's immutuble it store the result in new location "\n"
+- void erase(int index, int length) --> Erase characters of the string , as it's immutuble it store the result in new location '\n'
 @parameters "\n"
 "\t" - int index : the start of eraseing "\n"
 "\t" - int length : the length of erasing "\n"
