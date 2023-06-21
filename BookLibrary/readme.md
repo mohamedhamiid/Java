@@ -14,5 +14,5 @@
 &nbsp; - Print info of all books <br>
 &nbsp; - Compare 2 books if they are identical or not by **ID** <br>
 ### readbook method : 
-&nbsp;- Input book info from user
+&nbsp; - Input book info from user
 
