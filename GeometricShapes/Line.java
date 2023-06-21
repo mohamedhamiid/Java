@@ -4,25 +4,27 @@
  */
 package GeometricShapes;
 
+import java.awt.geom.Point2D;
+
 /**
  *
  * @author mh_sm
  */
 public class Line extends Shape{
-    private Point end = new Point() ;
+    private Point2D end ;
     
-    Line(Point start , Point end){
+    Line(Point2D start , Point2D end){
     super(start);
     this.end = end;
     }
     
-    Point getEnd(){
+    Point2D getEnd(){
     return end ;
     }
         
     @Override
     final public void draw(){
-        System.out.println("The Start of line is at " + super.toString() + " The End is at"  + end.toString());
+        System.out.println("The Start of line is at " + super.toString() + " The End is at ("  + end.getX() + "," + end.getY() + ")");
     }
     
 }

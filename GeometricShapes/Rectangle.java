@@ -4,6 +4,8 @@
  */
 package GeometricShapes;
 
+import java.awt.geom.Point2D;
+
 /**
  *
  * @author mh_sm
@@ -12,7 +14,7 @@ public class Rectangle extends Shape{
     private double length ;
     private double width ;
     
-    Rectangle(Point start , double length , double width){
+    Rectangle(Point2D start , double length , double width){
     super(start);
     this.length = length ;
     this.width = width ;

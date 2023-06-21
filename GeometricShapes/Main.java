@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package GeometricShapes;
+import java.util.ArrayList;
+import java.awt.geom.Point2D;
 //import javafx.geometry.Point2D ;
 /**
  *
@@ -14,17 +16,27 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Point start = new Point(3,5);
-        Point end = new Point(4,6);
+
         
-        Line l1 = new Line(start , end);
-        l1.draw();
+        Line l1 = new Line(new Point2D.Double(1 , 2) ,new Point2D.Double(3 , 4));
         
-        Rectangle r1 = new Rectangle(start , 3 , 5);
-        r1.draw();
+        Rectangle r1 = new Rectangle(new Point2D.Double(3 , 5) , 3 , 5);
         
-        Ellipse e1 = new Ellipse(start , 3 , 5);
-        e1.draw();
+        Ellipse e1 = new Ellipse(new Point2D.Double(4 , 6) , 3 , 5);
+        
+        Canvas c = new Canvas();
+        
+        c.addShape(r1);
+        c.addShape(e1);
+        c.addShape(l1);
+        c.drawAll();
+        
+        System.out.println("\nAfter Remove Ellipse");
+        c.removeShape(e1);
+        c.drawAll();
+        
+        System.out.println("\nThe closest to (0,0) is:");
+        c.getShape(new Point2D.Double(0 , 0)).draw();
     }
     
 }

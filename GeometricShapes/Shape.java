@@ -4,21 +4,23 @@
  */
 package GeometricShapes;
 
+import java.awt.geom.Point2D;
+
 /**
  *
  * @author mh_sm
  */
 public abstract class Shape {
-    protected Point start ;
+    protected Point2D start  ;
     
     Shape(){}
     
-    Shape(Point start){
-        this.start = new Point(start.getX(), start.getY());
+    Shape(Point2D start){
+        this.start = start;
     }
     
     
-    Point getStart(){
+    Point2D getStart(){
     return start ;
     }
     
