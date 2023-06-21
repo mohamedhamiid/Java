@@ -11,19 +11,19 @@ import java.time.LocalDate;
  * @author mh_sm
  */
 public class Book {
-protected static int idNo ;
+protected static int NoOfBooks ;
     protected int id ;
     protected String title ;
     protected java.time.LocalDate date ;
     protected double price ; 
     
     Book(){
-        idNo++;
+        NoOfBooks++;
     }
     
     Book(String title , LocalDate date , double price){
         this();
-        this.id = idNo ;
+        this.id = NoOfBooks ;
         this.title = title ;
         this.date = (java.time.LocalDate) date ;
         this.price = price ;  
