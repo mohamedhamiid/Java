@@ -7,12 +7,12 @@
 - Class which inherit **Book** , it has additional info (Number of pages).
 ## Main
 - Test Class
-### - Main method : 
+### Main method : 
 &nbsp;- Enter number of books to enter (n)
 &nbsp;- Create Array based on (n)
 &nbsp;- Read Info by **readbook** method
 &nbsp;- Print info of all books
 &nbsp;- Compare 2 books if they are identical or not by **ID**
-### - readbook method : 
+### readbook method : 
 &nbsp;- Input book info from user
 
