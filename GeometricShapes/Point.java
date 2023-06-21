@@ -8,7 +8,7 @@ package GeometricShapes;
  *
  * @author mh_sm
  */
-public class Point {
+public class Point{
     
     private double x_point;
     private double y_point ;
@@ -20,12 +20,6 @@ public class Point {
     Point(double x , double y){
     this.x_point = x ;
     this.y_point = y ;
-    }
-    
-    // Arg constructor
-    Point(Point p){
-    this.x_point = p.x_point ;
-    this.y_point = p.y_point ;
     }
     
     public double getX(){

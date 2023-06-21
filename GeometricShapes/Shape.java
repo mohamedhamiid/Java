@@ -9,13 +9,12 @@ package GeometricShapes;
  * @author mh_sm
  */
 public abstract class Shape {
-    protected Point start = new Point(); ;
+    protected Point start ;
     
     Shape(){}
     
     Shape(Point start){
-        this.start.setX(start.getX());
-        this.start.setY(start.getY());
+        this.start = new Point(start.getX(), start.getY());
     }
     
     
